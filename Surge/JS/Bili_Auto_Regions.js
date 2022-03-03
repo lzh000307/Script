@@ -91,13 +91,13 @@ async function SwitchRegion(play) {
 		let select;
 		if (/\u50c5[\u4e00-\u9fa5]+\u6e2f|%20%E6%B8%AF&/.test(play)) {
 			const test = /\u50c5[\u4e00-\u9fa5]+\u53f0/.test(play);
-			if (current != HK && (current == TW && test ? 0 : 1)) select = HK;
+			if (current != 🇭🇰𝐇𝐊 && (current == TW && test ? 0 : 1)) select = 🇭🇰𝐇𝐊;
 		} else if (/\u50c5[\u4e00-\u9fa5]+\u53f0|%20%E5%8F%B0&/.test(play)) {
-			if (current != TW) select = TW;
+			if (current != 🇨🇳𝐓𝐖) select = 🇨🇳𝐓𝐖;
 		} else if (play === -404) {
-			if (current != DF) select = DF;
-		} else if (current != CN) {
-			select = CN;
+			if (current != 🇭🇰𝐇𝐊) select = 🇭🇰𝐇𝐊;
+		} else if (current != 🎯𝐃𝐢𝐫𝐞𝐜𝐭) {
+			select = 🎯𝐃𝐢𝐫𝐞𝐜𝐭;
 		}
 		if ($.isQuanX && current === 'direct' && select === 'DIRECT') {
 			select = null; //avoid loops in some cases
