@@ -9,6 +9,10 @@ Update: 2022.01.26
 Author: @NobyDa
 Use: Surge, QuanX, Loon
 
+Update: 2022.03.03
+Author: @Elvis
+Use: Surge, QuanX, Loon
+
 ****************************
 港澳台自动切换地区说明 :
 ****************************
@@ -78,7 +82,7 @@ let run = EnvInfo();
 async function SwitchRegion(play) {
 	const Group = $.read('BiliArea_Policy') || '🔅𝐇𝐊𝐌𝐓'; //Your blibli policy group name.
 	const CN = $.read('BiliArea_CN') || 'DIRECT'; //Your China sub-policy name.
-	const TW = $.read('BiliArea_TW') || '🇹🇼TW'; //Your Taiwan sub-policy name.
+	const TW = $.read('BiliArea_TW') || '🇨🇳𝐓𝐖'; //Your Taiwan sub-policy name.
 	const HK = $.read('BiliArea_HK') || '🇭🇰HK'; //Your HongKong sub-policy name.
 	const DF = $.read('BiliArea_DF') || '🇭🇰HK'; //Sub-policy name used after region is blocked(e.g. url 404)
 	const off = $.read('BiliArea_disabled') || ''; //WiFi blacklist(disable region change), separated by commas.
