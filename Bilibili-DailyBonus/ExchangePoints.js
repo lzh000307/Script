@@ -32,8 +32,8 @@ cron "10,20,30 0 12 * * *" script-path=https://raw.githubusercontent.com/NobyDa/
 // 新建一个实例对象, 把兼容函数定义到$中, 以便统一调用
 let $ = new nobyda();
 
-// 读取兑换商品名, 默认兑换积分商城中的"积分兑换"; 该接口为BoxJs预留, 以便修改
-let productName = $.read('BM_ProductName') || '积分兑换';
+// 读取兑换商品名, 默认兑换积分商城中的"【超特惠】限量-0点秒杀"; 该接口为BoxJs预留, 以便修改
+let productName = '【超特惠】限量-0点秒杀';
 
 // 读取兑换数量, 默认兑换最大值; 该接口为BoxJs预留, 以便修改
 let productNum = $.read('BM_ProductNum');
